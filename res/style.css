@@ -208,6 +208,21 @@ button {
 	border-radius: 50px;
 }
 
+#status {
+	margin: auto;
+	padding: 10px 20px;
+	line-height: 1em;
+	color: #6869a1;
+	font-size: 1em;
+	background: #7879b9;
+	border: solid 2px #6869a1;
+	border-radius: 50px;
+}
+
+#status span {
+	font-weight: bold;
+}
+
 @media (min-width: 500px) {
 	.splash .center {
 		padding-top: 240px;
