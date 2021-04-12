@@ -209,14 +209,13 @@ button {
 }
 
 #status {
-	margin: auto;
 	padding: 10px 20px;
-	line-height: 1em;
+	line-height: 5em;
 	color: #fff;
 	font-size: 1em;
 	background: #7879b9;
 	border: solid 2px #6869a1;
-	border-radius: 50px;
+	border-radius: 15px;
 }
 
 #status span {
