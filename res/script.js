@@ -27,7 +27,7 @@ if (localStorage.getItem("skorPlayer")) {
 }
 
 startGame.addEventListener("click", () => {
-	splashScreen.style.top = "-10vh";
+	splashScreen.style.top = "-120vh";
 	splashScreen.style.transition = ".75s";
 });
 
