@@ -14,6 +14,8 @@ let batu              = document.getElementById("batu");
 let gunting           = document.getElementById("gunting");
 let kertas            = document.getElementById("kertas");
 
+let status	      = document.getElementById("status");
+
 if (localStorage.getItem("skorKen")) {
 	skorKen = localStorage.getItem("skorKen");
 	displaySkorKen.innerHTML = skorKen;
@@ -107,15 +109,18 @@ function result(who) {
 			skorKen++;
 			localStorage.setItem("skorKen", skorKen);
 			displaySkorKen.innerHTML= skorKen;
+			status.innerHTML= "Ninja Ken Win";
 			console.log("Ninja Ken Menang");
 			break;
 		case "player":
 			skorPlayer++;
 			localStorage.setItem("skorPlayer", skorPlayer);
 			displaySkorPlayer.innerHTML= skorPlayer;
+			status.innerHTML= "Player Win";
 			console.log("Anda Menang");
 			break;
 		default:
+			status.innerHTML= "Draw";
 			console.log("Seri");
 			break;
 	}
